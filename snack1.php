@@ -6,7 +6,36 @@ Olimpia Milano - Cantù | 55-60 -->
 <?php
 
 $partite = [
-    
+    [
+        squadraCasa = "Olimpia Milano",
+        squadraOspite = "Virtus Bologna",
+        puntiCasa = rand(1, 100),
+        puntiOspite = rand(1, 100)
+    ],
+    [
+        squadraCasa = "Varese",
+        squadraOspite = "Cantù",
+        puntiCasa = rand(1, 100),
+        puntiOspite = rand(1, 100)
+    ],
+    [
+        squadraCasa = "V.L. Pesaro",
+        squadraOspite = "Reyer Venezia",
+        puntiCasa = rand(1, 100),
+        puntiOspite = rand(1, 100)
+    ],
+    [
+        squadraCasa = "Fortitudo Bologna",
+        squadraOspite = "Virtus Roma",
+        puntiCasa = rand(1, 100),
+        puntiOspite = rand(1, 100)
+    ],
+    [
+        squadraCasa = "Treviso",
+        squadraOspite = "Reggiana",
+        puntiCasa = rand(1, 100),
+        puntiOspite = rand(1, 100)
+    ]
 ]
 
 ?>

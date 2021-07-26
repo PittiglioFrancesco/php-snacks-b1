@@ -7,34 +7,34 @@ Olimpia Milano - Cantù | 55-60 -->
 
 $partite = [
     [
-        squadraCasa = "Olimpia Milano",
-        squadraOspite = "Virtus Bologna",
-        puntiCasa = rand(1, 100),
-        puntiOspite = rand(1, 100)
+        "squadraCasa" => "Olimpia Milano",
+        "squadraOspite" => "Virtus Bologna",
+        "puntiCasa" => rand(1, 100),
+        "puntiOspite" => rand(1, 100)
     ],
     [
-        squadraCasa = "Varese",
-        squadraOspite = "Cantù",
-        puntiCasa = rand(1, 100),
-        puntiOspite = rand(1, 100)
+        "squadraCasa" => "Varese",
+        "squadraOspite" => "Cantù",
+        "puntiCasa" => rand(1, 100),
+        "puntiOspite" => rand(1, 100)
     ],
     [
-        squadraCasa = "V.L. Pesaro",
-        squadraOspite = "Reyer Venezia",
-        puntiCasa = rand(1, 100),
-        puntiOspite = rand(1, 100)
+        "squadraCasa" => "V.L. Pesaro",
+        "squadraOspite" => "Reyer Venezia",
+        "puntiCasa" => rand(1, 100),
+        "puntiOspite" => rand(1, 100)
     ],
     [
-        squadraCasa = "Fortitudo Bologna",
-        squadraOspite = "Virtus Roma",
-        puntiCasa = rand(1, 100),
-        puntiOspite = rand(1, 100)
+        "squadraCasa" => "Fortitudo Bologna",
+        "squadraOspite" => "Virtus Roma",
+        "puntiCasa" => rand(1, 100),
+        "puntiOspite" => rand(1, 100)
     ],
     [
-        squadraCasa = "Treviso",
-        squadraOspite = "Reggiana",
-        puntiCasa = rand(1, 100),
-        puntiOspite = rand(1, 100)
+        "squadraCasa" => "Treviso",
+        "squadraOspite" => "Reggiana",
+        "puntiCasa" => rand(1, 100),
+        "puntiOspite" => rand(1, 100)
     ]
 ]
 
@@ -47,7 +47,16 @@ $partite = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack 1 PHP</title>
 </head>
+<!-- Olimpia Milano - Cantù | 55-60 -->
 <body>
+
+<ul>
+        <?php for($i = 0; $i < count($partite); $i++) { ?>
+
+        <li><?php echo $partite[$i]["squadraCasa"] . " - " . $partite[$i]["squadraOspite"] . " | " . $partite[$i]["puntiCasa"] . "-" . $partite[$i]["puntiOspite"] ?></li>
+
+        <?php } ?>
+</ul>
     
 </body>
-</html>l
+</html>

@@ -19,12 +19,12 @@ $age = $_GET["age"];
 </head>
 <body>
     
-<a href="http://localhost:8888/php-snacks-b1/php-snacks-b1/snack2.php?name=&mail=&age=">Clicca qui per lo snack 2</a>
+<a href="snack2.php?name=&mail=&age=">Clicca qui per lo snack 2</a>
 
 <?php
 
 
-if ((strlen($nome) > 3) && (str_contains($mail, ".") == true) && (is_numeric($age) == true)) {
+if (strlen($nome) > 3 && str_contains($mail, ".") == true && is_numeric($age) == true) {
     echo "Accesso Riuscito";
 } else {
     echo "Accesso Negato";
